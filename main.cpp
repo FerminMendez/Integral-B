@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     vector<int> cards;
     Store store(num_cartas);//Crear nueva tienda
     Graph sin;//Grafo de sinergias
-    sin.loadGraphList("grafo.txt", 24, 24);
+    sin.loadGraphList("grafo.txt", num_cartas, num_cartas);
     menu();
     cin>>op;
     if (op==1){
