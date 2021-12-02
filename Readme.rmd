@@ -23,7 +23,10 @@ Es decir, se mapean los valores a un bucket determinado. Cuando los datos no son
 No obstante, para numeros consecutivos en un rango resulta muy conveniente. La implementación con solo 2 buckets es un tipo de quicksort.
 Ahora bien, para nuestro, donde a lo más tendremos 24.
 
-
+Análisis de complejidad del Bucket sort.
+El peor caso se comporta O(n^2). Pues funcionaría como un selection sort simple si todos quedan en un bucket. Para este programa como las cartas estan dsitribuidas uniformemente sería raro.
+En el caso promedio tiene un rendimiento de O(n+k) donde k son el numero de buckets.
+En este caso para 24 cartas he implementado con 7 buckets.
 SICT0302B: Toma decisiones
 
 En el juego de mesa King of Tokyo, las power cards son piezas clave para ganar.
