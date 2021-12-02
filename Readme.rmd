@@ -2,6 +2,27 @@ Integral B
 
 Correcciones:
 
+SICT0302B
+-Usa grafos para el análisis de información: Línea 34 main.cpp Lectura de grafo.txt. Es la lista de adyacencia que representa las sinergias entre las 24 cartas registradas.
+-Usa un algortmos de busqueda de grafos para resolver un problema. Se utiliaza BFS a dos niveles para determinar si un los elementos de un conjunto de cartas están a uno o dos niveles de las cartas registradas en la tienda.
+main.cpp linea 68 se llama store.recomended
+
+SEG0702A
+Nuevo algoritmo de ordenamiento: Bucket sort
+Uso del algoritmo: Ordenar los id de las cartas para mostrar la información de manera ordenada. main.cpp linea 58,64,73. Se utiliza antes de imprimir las cartas
+Implementado en manage.h linea 211
+
+Descripción del algoritmo e implementación.
+A grandes rasgos la implementación consiste en:
+-Crear buckets
+-Mapear los valores a los buckets
+-Acomodar los valores en los buckets
+-Recolectar los valores de los buckets ya ordenados.
+La técnica consiste en "buckets" espacios para almacenar datos que compartan un rango de valores.
+Es decir, se mapean los valores a un bucket determinado. Cuando los datos no son uniformes este método poco eficiente.
+No obstante, para numeros consecutivos en un rango resulta muy conveniente. La implementación con solo 2 buckets es un tipo de quicksort.
+Ahora bien, para nuestro, donde a lo más tendremos 24.
+
 
 SICT0302B: Toma decisiones
 
