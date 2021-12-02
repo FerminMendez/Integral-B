@@ -18,6 +18,7 @@ class Store{
   string printCards();
   vector<int> recomend(vector<int>,Graph);
   vector<int> store2vector();
+  void set(int,int,int);
 };
 
 Store::Store(int n){
@@ -59,5 +60,10 @@ vector<int> Store::store2vector(){
     return r;
 }
 
+void Store::set(int a,int b,int c){
+sell[0]=a;
+sell[1]=b;
+sell[2]=c;
+}
 
 #endif 
