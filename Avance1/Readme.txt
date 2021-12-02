@@ -1,5 +1,10 @@
 Integral B
 
+Correcciones:
+
+
+
+
 SICT0302B: Toma decisiones
 
 En el juego de mesa King of Tokyo, las power cards son piezas clave para ganar.

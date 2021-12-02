@@ -128,8 +128,8 @@ void Graph::loadGraphList(string fileName, int numNodes, int maxArcos){//Tenemos
 		int u, v;
 		if (lee.is_open()){
 			while (getline(lee, line)){
-				u = stoi(line.substr(1,1))*10+stoi(line.substr(2,1));
-				v = stoi(line.substr(5,1))*10+stoi(line.substr(6,1));
+				u = stoi(line.substr(1,1))*10+stoi(line.substr(2,1))-1;
+				v = stoi(line.substr(5,1))*10+stoi(line.substr(6,1))-1;//Menos uno porque el ID se lee desde el 1
 				addEdgeAdjList(u,v);
 			}
 			lee.close(); // Closes the file
